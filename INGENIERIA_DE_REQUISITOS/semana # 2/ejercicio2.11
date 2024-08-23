@@ -1,0 +1,8 @@
+def calcularMetrosCubicosAlberca(ancho, largo, profundidad):
+    precioPorMetroCubico = 5600
+    
+    volumenAlberca = ancho * largo * profundidad
+    precioTotalPagar = volumenAlberca * precioPorMetroCubico
+    return precioTotalPagar
+
+print(calcularMetrosCubicosAlberca(4, 7, 2))

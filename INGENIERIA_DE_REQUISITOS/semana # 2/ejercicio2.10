@@ -1,0 +1,22 @@
+class Modista:
+    def __init__(self, metros):
+        self.metros  = metros
+        
+        # constantes
+        self.PULGADA = 0.0252
+        self.METRO = 39.33
+        
+    def determinarPulgadasNecesarias(self):
+        pulgadasNecesarias = 0
+        pulgadasNecesarias = self.metros / self.PULGADA
+        return pulgadasNecesarias
+
+    # metodo extra, pasa de pulgadas a metros    
+    def pasarPulgadasA_metros(self, nPulgadas):
+        nMetros = 0
+        nMetros = nPulgadas / self.METRO
+        return nMetros
+    
+test = Modista(46)
+print(test.determinarPulgadasNecesarias())
+print(test.pasarPulgadasA_metros(1771.6535433070867))
